@@ -34,8 +34,8 @@ basic.forever(function () {
         dx = 0
         dy = -1
         timeDelayGame = timeDelayGame - 200
-        if ((0 as any) < (200 as any)) {
-        	
+        if (timeDelayGame < 200) {
+            timeDelayGame = 200
         }
         levelGame = levelGame + 1
         basic.showNumber(levelGame)
